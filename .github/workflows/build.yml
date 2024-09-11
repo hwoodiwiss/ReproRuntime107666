@@ -47,6 +47,9 @@ jobs:
 
       - name: Get Linked Libs
         run: |
+          echo 'Console'
           ldd ./artifacts/publish/Console/release_linux-x64/Console
+          echo '\nWebApi'
           ldd ./artifacts/publish/WebApi/release_linux-x64/WebApi
+          echo '\nWebApiAot'
           ldd ./artifacts/publish/WebApiAot/release_linux-x64/WebApiAot
