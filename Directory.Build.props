@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <Nullable>enable</Nullable>
+    <TargetFramework>net9.0</TargetFramework>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+  </PropertyGroup>
+</Project>

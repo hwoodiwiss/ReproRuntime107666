@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0EF9E939-7AB5-4142-92D2-BA857D93BA0E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".workflows", ".workflows", "{E43755F6-D3A6-4C39-BAD7-CED3995CF56C}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{772EE4D3-AA17-4883-B5F9-12E116648E0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{00CC538C-3B01-44AC-BCEC-10FC5124B954}"
+	ProjectSection(SolutionItems) = preProject
+		build\build.ps1 = build\build.ps1
+		build\publish-aot.ps1 = build\publish-aot.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "src\Console\Console.csproj", "{C0560519-9650-4AF9-93E8-338475C9ECEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\WebApi\WebApi.csproj", "{8FBDD92F-926E-4B17-8B55-77AE6AE6151D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAot", "src\WebApiAot\WebApiAot.csproj", "{4C8A6780-20BF-4319-9B22-D8CA1AA3CC1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00CC538C-3B01-44AC-BCEC-10FC5124B954} = {0EF9E939-7AB5-4142-92D2-BA857D93BA0E}
+		{E43755F6-D3A6-4C39-BAD7-CED3995CF56C} = {0EF9E939-7AB5-4142-92D2-BA857D93BA0E}
+		{C0560519-9650-4AF9-93E8-338475C9ECEE} = {772EE4D3-AA17-4883-B5F9-12E116648E0A}
+		{8FBDD92F-926E-4B17-8B55-77AE6AE6151D} = {772EE4D3-AA17-4883-B5F9-12E116648E0A}
+		{4C8A6780-20BF-4319-9B22-D8CA1AA3CC1F} = {772EE4D3-AA17-4883-B5F9-12E116648E0A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0560519-9650-4AF9-93E8-338475C9ECEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0560519-9650-4AF9-93E8-338475C9ECEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0560519-9650-4AF9-93E8-338475C9ECEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0560519-9650-4AF9-93E8-338475C9ECEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBDD92F-926E-4B17-8B55-77AE6AE6151D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBDD92F-926E-4B17-8B55-77AE6AE6151D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBDD92F-926E-4B17-8B55-77AE6AE6151D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBDD92F-926E-4B17-8B55-77AE6AE6151D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8A6780-20BF-4319-9B22-D8CA1AA3CC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8A6780-20BF-4319-9B22-D8CA1AA3CC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8A6780-20BF-4319-9B22-D8CA1AA3CC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8A6780-20BF-4319-9B22-D8CA1AA3CC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
